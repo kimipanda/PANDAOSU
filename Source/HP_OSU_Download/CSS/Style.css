@@ -1,0 +1,137 @@
+﻿
+* { margin: 0; padding: 0; font-family:'Malgun Gothic','Segoe UI Light','Nanum Gothic',dotum,Helvetica,sans-serif; }
+a { text-decoration: none; }
+ul { list-style: none; }
+div { margin: 0px auto; }
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+/* nav */
+#nav {
+    width: 1141px; height: 50px;
+    background-color: #666666;
+    color: #ffffff;
+    text-align: center;
+    margin: 30px auto;;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+#nav div { width: 130px; float: left; background-color: #868686; }
+#nav div a { color: #ffffff; font-weight: 600;   }
+#nav div p { display: inline;  color:#ff52a3; }
+
+#nav ul li { float: left; font-size: 0.9em; }
+#nav ul li:last-child { float: right; }
+#nav ul li [name=n]{
+    color: #ffffff;
+    border: 0;
+    padding: 5px;
+    background-color: #727272;
+    float: left;
+    margin: 10px 5px;
+}
+
+#nav ul li button {
+    width: 50px; height: 50px;
+    padding-top: 3px;
+    border: 0; background: none; color: #ffffff;
+    cursor: pointer;
+    background-color: #504b4d;
+}
+
+#nav ul li button:hover {
+    background-color: #585355;
+}
+
+#nav .nav_drop1 a { height: 100px; color: #ffffff;padding: 0px 20px; display: block; }
+#nav .nav_drop1 li a:hover {
+    background-color: #b2b2b2;
+}
+
+/* nav */
+
+/* content  */
+
+#content {
+    width: 1141px;
+    height: 100%;
+    margin: 8px auto;
+}
+
+#content ul{
+  overflow: hidden;
+}
+
+#content ul:nth-child(1) li {
+    width: 160px;
+    height: 168px;
+    float: left;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    margin: 2px 3px auto 0px;
+}
+
+#content ul li a { color: #000000; display: block; transition : background-color 0.3s; }
+#content ul:nth-child(1) p { display: block; width: 160px; height: 21px; overflow: hidden; padding-top: 2px;}
+#content ul:nth-child(1) p:nth-child(2) { display: block; width: 160px; height: 22.5px; overflow: hidden; }
+#content ul:nth-child(1) p::selection{ background-color: #ddd;}
+
+
+.title { color: #4fb5ff; }
+.artist { color: #f94290; }
+
+#content ul:nth-child(1) li a:nth-child(1):hover{ background-color: #e5e5e5; display: block; }
+#content ul:nth-child(1) li a:nth-child(2):hover{ background-color: #d6d6d6; display: block; }
+
+#content ul:nth-child(1) li:hover button { visibility: visible;}
+
+#content>ul>li>button { visibility: hidden;}
+#content ul:nth-child(1) li .fa-stop { visibility: visible; }
+
+#content .bitmap { margin-top: 2px; font-size: 0.8em;  text-align: center; }
+
+#content button {
+    width: 158px; height: 119px;
+    position: relative;
+    border: 0; background: none;
+    color: #fff;
+    text-shadow: 0px 0px 4px #000000;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+#help { width: 100%; height: 40px; }
+.h_title{ background-color:#557add; color: #fff; border-bottom: 1px solid #fff; line-height: 40px; font-size: 1em; cursor: pointer; }
+.h_title::before { content: '●'; color: #fff; margin: 0px 3px auto;}
+.h_title:hover { background-color: #6a8be1; transition : background-color 0.3s;}
+
+
+.h_hide{ width: 100%; padding: 10px 0px; background-color: #eee; float: left; text-align: center; display: none;}
+.h_hide p { margin: 8px 0px;}
+.h_hide .copy{ width: 100%; height: 30px; line-height: 30px; background-color: #ccc; cursor: pointer; }
+.copy:hover { background-color: #bbb; color: #eee; transition : background-color 0.3s;}
+/* content  */
+
+@media  (min-width: 100px) and (max-width: 400px){
+    #content { width: 100%; height: 100%; padding-left: 0px;}
+    #content ul:nth-child(1) li { margin: 2px;}
+    #nav { width: 100%; margin: 0px auto; }
+}
+
+@media  (min-width: 401px) and (max-width: 606px){
+    #content { width: 100%; height: 100%; padding-left: 0px;}
+    #content ul:nth-child(1) li { margin: 2px;}
+    #nav { width: 100%; margin: 0px auto; }
+}
+@media (min-width: 607px) and (max-width: 810px){
+    #content { width: 100%; height: 100%; padding-left: 0px;}
+    #content ul:nth-child(1) li { margin: 2px;}
+    #nav { width: 100%; margin: 0px auto; }
+}
+@media (min-width: 811px) and (max-width: 1280px) {
+    #content { width: 100%; height: 100%; padding-left: 0px;}
+    #content ul:nth-child(1) li { margin: 2px;}
+    #nav { width: 100%; margin: 0px auto; }
+}

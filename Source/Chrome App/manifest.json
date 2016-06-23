@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "PANDAOSU",
+  "short_name": "PANDAOSU",
+  "version": "1.0.2",
+  "description": "PANDAOSU osu! Bitmap Mirror",
+  "icons": {
+    "128": "128.png"
+  },
+  "permissions": [ "activeTab" ],
+  "content_scripts": [
+    {
+      "matches" :  [ "<all_urls>" ],
+      "js" :  [ "background.js" ]
+    }
+  ],
+  "web_accessible_resources": [ "images/*.png" ]
+}
